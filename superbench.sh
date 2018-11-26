@@ -424,7 +424,7 @@ virt_check(){
 		virtual="OpenVZ"
 	elif [[ "$virtualx" == *kvm-clock* ]]; then
 		virtual="KVM"
-	elif [[ "$cname" == *KVM* ]]; then
+	elif [[ "$cname" == *KVM* || "$cname" == *QEMU*]]; then
 		virtual="KVM"
 	elif [[ "$virtualx" == *"VMware Virtual Platform"* ]]; then
 		virtual="VMware"
